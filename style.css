@@ -1,0 +1,145 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+header{
+  text-align: center;
+  width: 100%;
+  margin-top: 85px;
+  margin-bottom: 70px;
+}
+
+h1{
+  font-size: 30px;
+  font-weight: 400;
+  color: #363C57;
+}
+
+header h6{
+  font-size: 14px;
+  font-weight: 400;
+  color: #AFB1BB;
+  margin-top: 16px;
+}
+
+/* ----------------------------------------------------- */
+
+.home{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.precios{
+  display: flex;
+  width: 80vw;
+  max-width: 990px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-precios{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 261px;
+  height: 370px;
+  border-radius: 10px;
+  transition: 0.3s;
+  -webkit-box-shadow: 0px 0px 36px -10px rgba(222,222,222,1);
+  -moz-box-shadow: 0px 0px 36px -10px rgba(222,222,222,1);
+  box-shadow: 0px 0px 36px -10px rgba(222,222,222,1);
+}
+
+.item-precios:hover{
+  -webkit-box-shadow: 0px 12px 36px -10px rgba(204,204,204,1);
+  -moz-box-shadow: 0px 12px 36px -10px rgba(204,204,204,1);
+  box-shadow: 0px 12px 36px -10px rgba(204,204,204,1);
+}
+
+.valor-precio{
+  font-size: 26px;
+  font-weight: 600;
+  color: #448EF6;
+  margin-top: 37px;
+  margin-bottom: 20px;
+}
+
+.valor-precio span{
+  font-size: 13px;
+  color: #7B82A1;
+}
+
+.tipo{
+  font-size: 22px;
+  font-weight: 400;
+  color: #606684;
+}
+
+.incluido{
+  font-size: 12px;
+  font-weight: 400;
+  color: #AFB1BB;
+}
+
+.lista-items{
+  width: 70%;
+  margin-top: 33px;
+}
+
+.item{
+  font-size: 14px;
+  color: #7B82A1;
+  margin-top: 12px;
+}
+
+/* ------------------------------------------------------------- */
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  box-sizing: border-box;
+  padding: 0 40px;
+  background-color: #448EF6;
+}
+
+footer p{
+  font-size: 14px;
+  margin-top: 30px;
+  margin-bottom: 35px;
+  color: white;
+  line-height: 20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1000px){
+  .precios{
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer{
+    position: relative;
+    margin-bottom: 0;
+  }
+
+  .item-precios{
+    margin-bottom: 100px;
+  }
+
+  .item-precios:hover{
+    -webkit-box-shadow: 0px 0px 36px -10px rgba(222,222,222,1);
+    -moz-box-shadow: 0px 0px 36px -10px rgba(222,222,222,1);
+    box-shadow: 0px 0px 36px -10px rgba(222,222,222,1);
+  }
+}
